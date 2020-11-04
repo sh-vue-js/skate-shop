@@ -72,21 +72,6 @@ nav{
     height: 50px;
 }
 
-.image{
-    background-color: grey;
-    padding:0  auto;
-}
-
- .icon{
-    display: none;
-    font-size: 20px;
-}
-
-.topnav a.icon.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 ul{
     padding: 0;
 }
@@ -109,10 +94,17 @@ ul li a{
     letter-spacing: 0.1rem;
 }
 
+a:hover{
+        color: black;
+ }
 
 #icon{
     float: right;
     line-height: 50px;
+}
+
+#icon:hover{
+    color:black;
 }
 
 #showcase{
@@ -241,58 +233,32 @@ button{
 /*Media Queries*/
 
 /*For Mobile*/
-@media screen and (max-width: 768px) {
-  nav li a{
-    display: none;
-  }
-    
-  nav #icon{
-    display: none; 
-  }
-    
-    
+@media screen and (max-width: 768px) {    
   .container{
         margin: 0;
         width: 100%;
    }
     
-  nav ul{
-    margin: 0;
-  }
-    
-  .image{
-      width: 100%;
-      background-color: grey;
-  }
-    
-    .image img{
-        margin-left: 20px;
+    ul{
+        margin: 0;
     }
     
-    
-   .image #widget{
-      display: inline;
-       position: absolute;
-       top: 15px;
-       margin-left: 20px;
-       padding: 0 5px;
+    nav{
+        background-color: grey;
     }
     
-    .image #widget span{
-         padding: 0 10px;
+    #icon{
+        padding-right: 40px;
     }
-    
-  nav .icon{
-    float: right;
-    display: block;
-  }
 
-  
-    #ham{
-        position: relative;
-        top: 12px;
-        right: 20px;
+    ul {
+        padding-left: 30px;
     }
+    
+    ul li a{
+        padding-right: 5px;
+    }
+    
     
     .sidebar{
         display:none;
@@ -324,7 +290,116 @@ button{
         font-size: 30px;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-        margin-right: 90px;
+        margin-right: 50px;
+    }
+    
+    .grey{
+    padding-bottom: 15px;
+    }
+    
+    #showcase{
+        margin: 0;
+        width:250px;
+        position: relative;
+        top:20px;
+        margin-bottom: 20px;
+    }
+    
+    .normal{
+        position: absolute;
+        left:20px;
+        height: 0;
+        top:150px;
+    }
+
+    .bottom{
+        position: absolute;
+        left: 20px;
+        font-size: 50px;
+        height:0px;
+        bottom: 100px;
+    }
+
+}
+
+@media only screen and (width: 1024px){
+    ul li a{
+        padding-right: 10px;;
+    }
+    
+    #main-article{
+        width: 50%;
+    }
+    
+    label{
+        margin-top: 20px;
+    }
+    
+    button{
+        margin-top: 30px;
+    }
+    
+    #showcase{
+        left: 50px;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .image{
+        display: none;
+    }
+    
+    .normal{
+        top: 110px;
+        height: 0px;
+    }
+    
+    .bottom{
+        bottom:60px;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    a:hover{
+        color: black;
+  }
+  nav ul{
+    margin: 0;
+  }
+    
+    .sidebar{
+        display:none;
+    }
+    
+    .aside{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-article{
+        float: none;
+    }
+    
+    #showcase{
+        float: none;
+    }
+    
+    .noshow{
+        display: none;
+    }
+    
+    .mobile{
+        margin-top: 40px;
+        padding: 0 30px 0 30px;
+    }
+    
+    .mobile #text{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
     }
     
     .grey{
@@ -353,49 +428,6 @@ button{
         bottom: 100px;
     }
 
-}
-
-
-@media only screen and (max-width: 768px) {
-  .topnav.responsive {position: absolute;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-   .topnav.responsive ul {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-}
-@media only screen and (width: 1024px){
-    ul li a{
-        padding-right: 10px;;
-    }
-    
-    #main-article{
-        width: 50%;
-    }
-    
-    button{
-        margin-top: 30px;
-    }
-    
-    #showcase{
-        left: 50px;
-    }
-    
-    .mobile{
-        display: none;
-    }
-    
-    .image{
-        display: none;
-    }
-    
-    
 }
 
 
