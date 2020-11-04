@@ -1,0 +1,403 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: ghostwhite;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/*icon*/
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-20 { font-size: 20px; }
+
+/*stars*/
+.checked {
+  color: yellow;
+  padding-right: 5px;
+}
+
+
+.sidebar{
+    height: 100%;
+    position:fixed;
+    background-color: grey;
+    width: 5.5%;
+    float: left;
+    overflow: hidden;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  padding: 3px;
+  margin-top: 10px; 
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 7px;
+}
+
+.move{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.aside{
+    float: right;
+    margin-left: 5.5%;
+    width: 95%;
+    background-color: #0392BF;
+    height: 100%;
+    position: fixed;
+}
+
+
+.container{
+    width: 85%;
+    overflow: hidden;
+    margin:auto;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+}
+
+.image{
+    background-color: grey;
+    padding:0  auto;
+}
+
+ .icon{
+    display: none;
+    font-size: 20px;
+}
+
+.topnav a.icon.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul{
+    padding: 0;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 50px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    padding-right: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+#icon{
+    float: right;
+    line-height: 50px;
+}
+
+#showcase{
+    float: left;
+    width: 30%;
+    position: relative;
+    margin-top: 80px;
+    left:90px;
+}
+
+.normal{
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+    left:-30px;
+    letter-spacing: 0.2rem;
+    height: inherit;
+}
+
+.bottom{
+    position: absolute;
+    letter-spacing: 0.2rem;
+    left: 30px;
+    font-size: 50px;
+    height: inherit;
+}
+
+
+#main-article{
+    font-size: 14px;
+    float: right;
+    width: 40%;
+    margin-top: 55px;
+    height: 500px;
+}
+
+
+#main-article #text{
+    margin-right: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+    
+}
+
+.grey{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom:5px;
+    padding-top: 10px;
+}
+
+big{
+    display: block;
+    padding-top:5px;
+}
+
+#main-article p{
+    word-spacing: 3px;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+}
+
+
+label{
+    display:block;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+}
+
+label span{
+    position: relative;
+    top:-10px;
+    font-size: 16px; 
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+svg{ 
+    display: inline;
+}
+
+
+#second{
+    display:block;
+    margin-top: 5px;
+    padding-top: 0;
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px; 
+    text-transform: uppercase;
+}
+
+
+select{
+    margin-left: 45px;
+    background-color: transparent;
+    height: 30px;
+    width: 150px;
+    border-color: white;
+    font-size: 15px;
+}
+
+select option[value="30-35"],
+select option[value="35-40"],
+select option[value="40-45"],
+select option[value="45-50"]{
+    background-color: #0392BF;
+}
+
+button{
+    margin-top: 30px;
+    width: 166px;
+    padding: 8px 10px 8px 10px;
+    background-color: #ED48BA;
+    border: none;
+    font-size:16px;
+}
+
+
+
+/*Media Queries*/
+
+/*For Mobile*/
+@media screen and (max-width: 768px) {
+  nav li a{
+    display: none;
+  }
+    
+  nav #icon{
+    display: none; 
+  }
+    
+    
+  .container{
+        margin: 0;
+        width: 100%;
+   }
+    
+  nav ul{
+    margin: 0;
+  }
+    
+  .image{
+      width: 100%;
+      background-color: grey;
+  }
+    
+    .image img{
+        margin-left: 20px;
+    }
+    
+    
+   .image #widget{
+      display: inline;
+       position: absolute;
+       top: 15px;
+       margin-left: 20px;
+       padding: 0 5px;
+    }
+    
+    .image #widget span{
+         padding: 0 10px;
+    }
+    
+  nav .icon{
+    float: right;
+    display: block;
+  }
+
+  
+    #ham{
+        position: relative;
+        top: 12px;
+        right: 20px;
+    }
+    
+    .sidebar{
+        display:none;
+    }
+    
+    .aside{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-article{
+        float: none;
+    }
+    
+    #showcase{
+        float: none;
+    }
+    
+    .noshow{
+        display: none;
+    }
+    
+    .mobile{
+        margin-top: 40px;
+        padding: 0 30px 0 30px;
+    }
+    
+    .mobile #text{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-right: 90px;
+    }
+    
+    .grey{
+    padding-bottom: 15px;
+    }
+    
+    #showcase{
+        margin: 0;
+        width:250px;
+        position: relative;
+        top:20px;
+        margin-bottom: 20px;
+    }
+    .normal{
+        position: absolute;
+        left:20px;
+        height: 0;
+        top:150px;
+    }
+
+    .bottom{
+        position: absolute;
+        left: 20px;
+        font-size: 50px;
+        height:0px;
+        bottom: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .topnav.responsive {position: absolute;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+   .topnav.responsive ul {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+@media only screen and (width: 1024px){
+    ul li a{
+        padding-right: 10px;;
+    }
+    
+    #main-article{
+        width: 50%;
+    }
+    
+    button{
+        margin-top: 30px;
+    }
+    
+    #showcase{
+        left: 50px;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .image{
+        display: none;
+    }
+    
+    
+}
+
+
+
+
