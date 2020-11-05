@@ -27,5 +27,6 @@ var background_4 = document.getElementById("last").addEventListener('click', cli
 function clickFour(){
     document.querySelector("body").style.backgroundColor = ' #B3D4E0';
     document.querySelector('button').style.backgroundColor = '#ED48BA';
+    document.querySelectorAll(".grey").style.color = "white";
     
 }
