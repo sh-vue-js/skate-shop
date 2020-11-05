@@ -7,7 +7,8 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
+    margin-bottom: auto;
+    background-color:#0392BF; 
 }
 
 
@@ -29,6 +30,7 @@ body{
     width: 5.5%;
     float: left;
     overflow: hidden;
+    justify-content: center;
 }
 
 .sidebar a {
@@ -42,38 +44,42 @@ body{
 .logo{
     position: absolute;
     top: 20px;
-    left: 7px;
+    left: 9px;
 }
 
 .move{
     position: absolute;
     bottom: 25px;
     left: 25px;
+    cursor: pointer;
 }
 
-.aside{
-    float: right;
+i:hover{
+    color: black;
+}
+
+.main{
     margin-left: 5.5%;
-    width: 95%;
-    background-color: #0392BF;
-    height: 100%;
-    position: fixed;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
 .container{
-    width: 85%;
+    width: 80%;
     overflow: hidden;
-    margin:auto;
+    margin:0 auto;
 }
 
 nav{
     width: 100%;
     height: 50px;
+    padding-left:10px;
 }
 
+
 ul{
-    padding: 0;
+    padding:0;
 }
 
 
@@ -89,7 +95,7 @@ ul li a{
     text-decoration: none;
     font-size: 13px;
     color: white;
-    padding-right: 25px;
+    padding-right: 20px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
@@ -101,6 +107,10 @@ a:hover{
 #icon{
     float: right;
     line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    
 }
 
 #icon:hover{
@@ -109,36 +119,37 @@ a:hover{
 
 #showcase{
     float: left;
-    width: 30%;
-    position: relative;
-    margin-top: 80px;
-    left:90px;
+    width: 20%;
+    margin-top: 70px;
+    height: 100%;
+    margin-left: 100px;
 }
 
 .normal{
     position: absolute;
-    bottom: 0px;
+    bottom:  160px;
+    left: 200px;
     font-size: 50px;
-    left:-30px;
     letter-spacing: 0.2rem;
-    height: inherit;
+    
 }
 
 .bottom{
     position: absolute;
     letter-spacing: 0.2rem;
-    left: 30px;
+    left: 250px;
     font-size: 50px;
-    height: inherit;
 }
 
 
 #main-article{
-    font-size: 14px;
+    font-size: 13px;
     float: right;
     width: 40%;
-    margin-top: 55px;
-    height: 500px;
+    margin-top: 40px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 
 
@@ -173,7 +184,7 @@ big{
 
 label{
     display:block;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 18px;
     line-height: 40px;
     height: 40px;
@@ -189,6 +200,11 @@ label span{
 
 svg{ 
     display: inline;
+    cursor: pointer;
+}
+
+svg:hover{
+    background-size: contain;
 }
 
 
@@ -210,6 +226,7 @@ select{
     width: 150px;
     border-color: white;
     font-size: 15px;
+    cursor: pointer;
 }
 
 select option[value="30-35"],
@@ -220,12 +237,17 @@ select option[value="45-50"]{
 }
 
 button{
-    margin-top: 30px;
+    margin-top: 40px;
     width: 166px;
     padding: 8px 10px 8px 10px;
     background-color: #ED48BA;
     border: none;
     font-size:16px;
+    cursor: pointer;
+}
+
+button:hover{
+    color:black;
 }
 
 
@@ -233,203 +255,78 @@ button{
 /*Media Queries*/
 
 /*For Mobile*/
-@media screen and (max-width: 768px) {    
-  .container{
-        margin: 0;
-        width: 100%;
-   }
-    
-    ul{
-        margin: 0;
+@media screen and (max-width: 660px) {
+    .container,.main{
     }
     
-    nav{
-        background-color: grey;
+    ul li a {
+        font-size: 12px;
+        padding-right: 10px;
     }
     
-    #icon{
-        padding-right: 40px;
-    }
-
-    ul {
-        padding-left: 30px;
-    }
     
-    ul li a{
-        padding-right: 5px;
+    body{
+        width: 95%;
+        margin: 0 auto;
     }
-    
     
     .sidebar{
         display:none;
     }
     
-    .aside{
-        width: 100%;
-        margin-left: 0;
+    img{
+        width: 150px;
+        height: 190px;
     }
+   
     
     #main-article{
         float: none;
+        margin-top:40px;
+        width: 100%;
     }
     
     #showcase{
         float: none;
-    }
-    
-    .noshow{
-        display: none;
-    }
-    
-    .mobile{
-        margin-top: 40px;
-        padding: 0 30px 0 30px;
-    }
-    
-    .mobile #text{
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        margin-right: 50px;
-    }
-    
-    .grey{
-    padding-bottom: 15px;
-    }
-    
-    #showcase{
         margin: 0;
-        width:250px;
-        position: relative;
-        top:20px;
-        margin-bottom: 20px;
+        width: 100%;
+    }
+    .grey{
+        padding-bottom: 15px;
     }
     
     .normal{
+        font-size: 25px;
         position: absolute;
-        left:20px;
-        height: 0;
-        top:150px;
-    }
-
-    .bottom{
-        position: absolute;
-        left: 20px;
-        font-size: 50px;
-        height:0px;
-        bottom: 100px;
-    }
-
-}
-
-@media only screen and (width: 1024px){
-    ul li a{
-        padding-right: 10px;;
-    }
-    
-    #main-article{
-        width: 50%;
-    }
-    
-    label{
-        margin-top: 20px;
-    }
-    
-    button{
-        margin-top: 30px;
-    }
-    
-    #showcase{
+        top:200px;
         left: 50px;
     }
     
-    .mobile{
-        display: none;
-    }
-    
-    .image{
-        display: none;
-    }
-    
-    .normal{
-        top: 110px;
-        height: 0px;
-    }
-    
     .bottom{
-        bottom:60px;
+        font-size: 25px;
+        top:250px;
+        left:80px;
     }
     
-}
-
-@media screen and (max-width: 350px) {
-    a:hover{
-        color: black;
-  }
-  nav ul{
-    margin: 0;
-  }
-    
-    .sidebar{
-        display:none;
-    }
-    
-    .aside{
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    #main-article{
-        float: none;
-    }
-    
-    #showcase{
-        float: none;
-    }
-    
-    .noshow{
-        display: none;
-    }
-    
-    .mobile{
-        margin-top: 40px;
-        padding: 0 30px 0 30px;
-    }
-    
-    .mobile #text{
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-    }
-    
-    .grey{
-    padding-bottom: 15px;
-    }
-    
-    #showcase{
+     #main-article #text{
         margin: 0;
-        width:250px;
-        position: relative;
-        top:20px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        padding-right:35px;
     }
-    .normal{
-        position: absolute;
-        left:20px;
-        height: 0;
-        top:150px;
+    
+    .checked {
+          display: inline-block;
     }
-
-    .bottom{
-        position: absolute;
-        left: 20px;
-        font-size: 50px;
-        height:0px;
-        bottom: 100px;
+    
+    small{
+        margin-top: auto;
     }
-
+    
+    button{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
-
 
 
 
